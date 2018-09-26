@@ -1,0 +1,33 @@
+RewriteEngine On
+RewriteRule ^index/?$ /Yavrular/cmsdemo/index.php [L]
+RewriteRule ^menu/([^/\.]+)?$ /Yavrular/cmsdemo/page.php?menu=$1 [L]
+RewriteRule ^page/([^/\.]+)?$ /Yavrular/cmsdemo/page.php?id=$1 [L]
+RewriteRule ^category/([^/\.]+)?$ /Yavrular/cmsdemo/category.php?uid=$1 [L]
+RewriteRule ^news/?$ /Yavrular/cmsdemo/news.php [L]
+RewriteRule ^gallery/?$ /Yavrular/cmsdemo/gallery.php [L]
+RewriteRule ^references/?$ /Yavrular/cmsdemo/references_logos.php [L]
+RewriteRule ^projects/?$ /Yavrular/cmsdemo/projects.php [L]
+RewriteRule ^contact/?$ /Yavrular/cmsdemo/contact.php [L]
+RewriteRule ^product/([^/\.]+)?$ /Yavrular/cmsdemo/product.php?id=$1 [L]
+RewriteRule ^index/([^/\.]+)?$ /Yavrular/cmsdemo/index.php#googtrans($1) [NE,L,R]
+RewriteEngine On
+RewriteRule ^/?$ /Yavrular/cmsdemo/index/ [L,R]
+RewriteRule ^project/([^/\.]+)-([^/\.]+)?$ /Yavrular/cmsdemo/project_detail.php?albumname=$1&name=$2 [L]
+RewriteRule ^news/([^/\.]+)?$ /Yavrular/cmsdemo/news_detail.php?id=$1 [L]
+RewriteRule ^album/([^/\.]+)?$ /Yavrular/cmsdemo/album_detail.php?id=$1 [L]
+RewriteRule ^newsfilter/([^/\.]+)?$ /Yavrular/cmsdemo/news.php?filter=$1 [L]
+RewriteRule ^search/([^/\.]+)?$ /Yavrular/cmsdemo/search.php [L]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
