@@ -74,7 +74,7 @@ error_reporting ( 0 );
 <li><a href="../social/index.php">						<i class="fa fa-thumbs-up fa-fw"></i> Sosyal Medya Yönetimi</a></li>
 <li><a href="../user/userman.php">					<i class="fa fa-user fa-fw"></i> Kullanıcı Yönetimi</a></li>
 
-<li><a href=<?php echo '"http://' . $_SERVER['HTTP_HOST'] . '/Yavrular/cmsdemo/"' ?> target="_blank"> 							<i class="fa fa-globe fa-fw"></i> Siteye Git</a></li>
+<li><a href=<?php echo '"http://' . $_SERVER['HTTP_HOST'] . '/"' ?> target="_blank"> 							<i class="fa fa-globe fa-fw"></i> Siteye Git</a></li>
 <li><a href="../../logout.php">								<i class="fa fa-sign-out fa-fw"></i>Sistemden Çıkış </a></li>
 </ul>
 </div>
