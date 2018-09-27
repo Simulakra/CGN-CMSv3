@@ -47,7 +47,7 @@ CKEDITOR.editorConfig = function( config ) {
     showParagraphs: false,
 
     // Whether or not you want to show the Word Count
-    showWordCount: false,
+    showWordCount: true,
 
     // Whether or not you want to show the Char Count
     showCharCount: true,
@@ -62,7 +62,7 @@ CKEDITOR.editorConfig = function( config ) {
     maxWordCount: -1,
 
     // Maximum allowed Char Count, -1 is default for unlimited
-    maxCharCount: 3000,
+    maxCharCount: -1,
 
     // Add filter to add or remove element before counting (see CKEDITOR.htmlParser.filter), Default value : null (no filter)
     filter: new CKEDITOR.htmlParser.filter({
