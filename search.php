@@ -47,15 +47,15 @@
                                 <div class='row'> 
                                         <div class='col-md-3 col-sm-3'>
                                             <div class='news-page-image'>
-                                                <img class='new-pre-img' src='../cms/modules/news/".$row['link']."'>
+                                                <img class='new-pre-img' src='cms/modules/news/".$row['link']."'>
                                             </div>
                                         </div>
                                         <div class='col-md-9 col-sm-9 news-padding'>
                                             <h3 class='blog-title'> 
-                                                <a href=\"../news/".$row['id']."\">".$row['title']."</a> 
+                                                <a href=\"news_detail?id=".$row['id']."\">".$row['title']."</a> 
                                             </h3>     
                                             <p>" .strip_tags(mb_strimwidth($summary, 0, 291,"...")). "</p> 
-                                            <a class='btn btn-primary btn-sm' href=\"../news/".$row['id']."\">Daha Fazla</a>
+                                            <a class='btn btn-primary btn-sm' href=\"news_detail?id=".$row['id']."\">Daha Fazla</a>
                                         </div>  
                                         
                                  </div> 
@@ -79,15 +79,15 @@
                                 <div class='row'> 
                                         <div class='col-md-3 col-sm-3'>
                                             <div class='news-page-image'>
-                                                <img class='new-pre-img' src='../cms/modules/urunler/".$row['url']."'>
+                                                <img class='new-pre-img' src='cms/modules/urunler/".$row['url']."'>
                                             </div>
                                         </div>
                                         <div class='col-md-9 col-sm-9 news-padding'>
                                             <h3 class='blog-title'> 
-                                                <a href=\"../product/".$row['id']."\">".$row['name']."</a> 
+                                                <a href=\"product?id=".$row['id']."\">".$row['name']."</a> 
                                             </h3>     
                                             <p>" .strip_tags(mb_strimwidth($summary, 0, 291,"...")). "</p> 
-                                            <a class='btn btn-primary btn-sm' href=\"../product/".$row['id']."\">Daha Fazla</a>
+                                            <a class='btn btn-primary btn-sm' href=\"product?id=".$row['id']."\">Daha Fazla</a>
                                         </div>  
                                         
                                  </div> 
@@ -108,10 +108,10 @@
                                 <div class='row'> 
                                         <div class='col-md-12 col-sm-12 news-padding'>
                                             <h3 class='blog-title'> 
-                                                <a href=\"../page/".$row['page_id']."\">".$row['page_name']."</a> 
+                                                <a href=\"page?id=".$row['page_id']."\">".$row['page_name']."</a> 
                                             </h3>     
                                             <p>" .strip_tags(mb_strimwidth($row['page_context'], 0, 291,"...")). "</p> 
-                                            <a class='btn btn-primary btn-sm' href=\"../page/".$row['page_id']."\">Daha Fazla</a>
+                                            <a class='btn btn-primary btn-sm' href=\"page?id=".$row['page_id']."\">Daha Fazla</a>
                                         </div>  
                                         
                                  </div> 
@@ -144,7 +144,7 @@
                                             } else if (tr_strtolower($row['menu_name'])=='ürünler' || tr_strtolower($row['menu_name'])=='ürünlerimiz'  ) {
                                             	echo "<a href=\"..\category\\0\">".$row["menu_title"]."</a>"; 
                                             } else {
-                                            	echo "<a href=\"../menu/".$row['menu_id']."\">".$row['menu_name']."</a>"; 
+                                            	echo "<a href=\"page?menu=".$row['menu_id']."\">".$row['menu_name']."</a>"; 
                                             }
                                             
                                			echo "</h3>     
@@ -164,7 +164,7 @@
                                             } else if (tr_strtolower($row['menu_name'])=='ürünler' || tr_strtolower($row['menu_name'])=='ürünlerimiz'  ) {
                                             	echo "<a class='btn btn-primary btn-sm' href=\"..\category\\0\">Daha Fazla</a>"; 
                                             } else {
-                                            	echo "<a class='btn btn-primary btn-sm' href=\"../menu/".$row['menu_id']."\">Daha Fazla</a>";
+                                            	echo "<a class='btn btn-primary btn-sm' href=\"page?menu=".$row['menu_id']."\">Daha Fazla</a>";
                                             }
                                          
                                        echo "</div>  

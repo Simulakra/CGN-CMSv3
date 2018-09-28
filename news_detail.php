@@ -33,11 +33,11 @@
                 <ul>
                     <?php 
                     foreach ($keywords as $value) {
-                        echo '<li><a href="../newsfilter/'.$value.'">'.$value.'</a></li>';
+                        echo '<li><a href="news?filter='.$value.'">'.$value.'</a></li>';
                     }
                     ?>
                 </ul>
-                <a class='btn btn-primary btn-sm pull-right news-btn' href="../news/">Haberlere geri dön</a> 
+                <a class='btn btn-primary btn-sm pull-right news-btn' href="news">Haberlere geri dön</a> 
             </div>          
         </div>
     </div>

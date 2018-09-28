@@ -1,4 +1,4 @@
-<form method="get" action="../search/">
+<form method="get" action="search/">
   <input type="text" name="keyword" />
   <button type="submit" class="sbtn fa fa-search"></button>
 </form>  

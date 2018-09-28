@@ -12,7 +12,7 @@
                         { 
                             echo '<li class="item clients-image">' 
                                     . '<div class="project-grid-item format-image image-link">' 
-                                        . '<img class="image-self" src="../cms/modules/ourclients/'.$row['filename'].'" width="190" height="auto">' 
+                                        . '<img class="image-self" src="cms/modules/ourclients/'.$row['filename'].'" width="190" height="auto">' 
                                     . '</div>' 
                                 . '</li>'; 
                         } 

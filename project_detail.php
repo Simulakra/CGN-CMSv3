@@ -42,8 +42,8 @@
                                         echo '<div class= "row">';
                                     }
                                     echo '<li class="col-md-4 col-sm-6 col-xs-6 grid-item project-grid-item paving format-image projectt-image">' 
-                                        . '<a href="../cms/modules/projects/'. $row['link'].' "class="popup-image media-box image-link" data-title='.$row['title'].'>' 
-                                            . '<img class="image-self" src="../cms/modules/projects/'.$row['link'].''; 
+                                        . '<a href="cms/modules/projects/'. $row['link'].' "class="popup-image media-box image-link" data-title='.$row['title'].'>' 
+                                            . '<img class="image-self" src="cms/modules/projects/'.$row['link'].''; 
                                         echo '" class="project-image">' 
                                         . '</a>' 
                                     . '</li>';

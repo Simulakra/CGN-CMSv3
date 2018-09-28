@@ -10,14 +10,14 @@
 
 <?php  
 $sql = ""; 
-include("../../std/cgncon.php"); 
+include("cms/std/cgncon.php"); 
 $sql = "select  link from 35cgnfromportfolio where id > 0;"; 
 $result = mysqli_query($GLOBALS["___mysqli_ston_user"], $sql) or die(mysqli_error($GLOBALS["___mysqli_ston_user"])); 
 while($row = mysqli_fetch_array($result)) 
 { 
 echo '<li class="item">' 
 . '<div class="project-grid-item format-image">' 
-. '<a href="cms/modules/fromportfolio/'.$row['link'].'" class="magnific-image media-box"><img src="../cms/modules/fromportfolio/'.$row['link'].'" width="auto" height="180" alt="ARTS MİMARLIK"></a>' 
+. '<a href="cms/modules/fromportfolio/'.$row['link'].'" class="magnific-image media-box"><img src="cms/modules/fromportfolio/'.$row['link'].'" width="auto" height="180" alt="ARTS MİMARLIK"></a>' 
 . '</div>' 
 . '</li>'; 
 } 

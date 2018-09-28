@@ -23,7 +23,7 @@
 					while ($row = mysqli_fetch_array($result))
 						{ 
 							echo '<div class="profile">'; 
-							echo '<li class="col-sm-4 col-md-3 col-xs-4 grid-item project-grid-item paving format-standard isotope-item ref-image"><img class="profile image-self" src="../cms/modules/referenceslogos/' . $row['filename'] . '';  
+							echo '<li class="col-sm-4 col-md-3 col-xs-4 grid-item project-grid-item paving format-standard isotope-item ref-image"><img class="profile image-self" src="cms/modules/referenceslogos/' . $row['filename'] . '';  
 							echo '" alt="" width="400" height="200"></a></li>'; 
 							echo '</div>'; 
 						} 

@@ -11,7 +11,7 @@
                         <a href="kategori.php?uid=0"><button type="button" class="btn btn-primary">TÜM KATEGORİLERİ İNCELEYİN</button></a>
                     </div>
                     <div class="col-md-6 text-center" style="margin-top: 50px;">
-                        <img src="../images/polat_anasayfa.jpg" width="" alt="" class="img-responsive">
+                        <img src="images/polat_anasayfa.jpg" width="" alt="" class="img-responsive">
                     </div>
                 </div>
             </div>
@@ -27,7 +27,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center">
-                        <img class="align-middle" src="../images/polat_anasayfa2.jpg" alt="" class="img-responsive" style="padding-top: 20px;">
+                        <img class="align-middle" src="images/polat_anasayfa2.jpg" alt="" class="img-responsive" style="padding-top: 20px;">
                     </div>
                     <div class="col-md-6" style="color: white;"> 
                         <h3 class="text-uppercase" style="color:white;">SİZİN İÇİN</h3>

@@ -26,7 +26,7 @@
 <div class="col-md-12">
 <div class="row">
 <div class="site-logo col-md-2">
-<a href="#"><img src="../images/logo.png"  alt="CGN Elektronik"></a>
+<a href="#"><img src="images/logo.png"  alt="CGN Elektronik"></a>
 </div>
 <div class="col-md-9">
 <a href="#" id="menu-toggle">Menu</a>

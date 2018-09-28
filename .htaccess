@@ -1,33 +1,9 @@
-RewriteEngine On
-RewriteRule ^index/?$ /index.php [L]
-RewriteRule ^menu/([^/\.]+)?$ /page.php?menu=$1 [L]
-RewriteRule ^page/([^/\.]+)?$ /page.php?id=$1 [L]
-RewriteRule ^category/([^/\.]+)?$ /category.php?uid=$1 [L]
-RewriteRule ^news/?$ /news.php [L]
-RewriteRule ^gallery/?$ /gallery.php [L]
-RewriteRule ^references/?$ /references_logos.php [L]
-RewriteRule ^projects/?$ /projects.php [L]
-RewriteRule ^contact/?$ /contact.php [L]
-RewriteRule ^product/([^/\.]+)?$ /product.php?id=$1 [L]
-RewriteRule ^index/([^/\.]+)?$ /index.php#googtrans($1) [NE,L,R]
-RewriteEngine On
-RewriteRule ^/?$ /index/ [L,R]
-RewriteRule ^project/([^/\.]+)-([^/\.]+)?$ /project_detail.php?albumname=$1&name=$2 [L]
-RewriteRule ^news/([^/\.]+)?$ /news_detail.php?id=$1 [L]
-RewriteRule ^album/([^/\.]+)?$ /album_detail.php?id=$1 [L]
-RewriteRule ^newsfilter/([^/\.]+)?$ /news.php?filter=$1 [L]
-RewriteRule ^search/([^/\.]+)?$ /search.php [L]
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.php -f 
+RewriteRule ^(.*)$ $1.php
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME}\.html -f 
+RewriteRule ^(.*)$ $1.html

@@ -13,32 +13,24 @@ error_reporting ( 1 );
 	<h1 class="page-header">Site Navigasyon Menüsü</h1>
     <div class="nw-popup " onclick="popupFunction()">
 	   <i class="fa fa-question-circle fa-fw quest-cms"></i>
-       <span class="nw-popuptext" id="my-nw-popup"> Hiçbir sayfa adı için harf büyük/küçük önemli değil<br>
-        Ör: Anasayfa = AnAsAyFa<br>
-        ****<br>
-        Genel sayfalara girebileceğiniz isimler > işaretinin sağında<br>
-        Genel sayfaların alt menü olup olamayacağı > işaretinin solundadır<br>
+       <span class="nw-popuptext" id="my-nw-popup"> Özel Menüler için Anahtar Kelimeler;<br>
+        
         <br>
-        -Anasayfa<br>
-        -Alt Menü olamaz > Anasayfa, Ana Sayfa, Home, Home Page<br>
+        -Anasayfa: anasayfa, ana sayfa
         <br>
-        -Ürünler<br>
-        -Alt Menü olamaz > Ürünler, Ürünlerimiz<br>
+        -Ürünler: urunler, urunlerimiz
         <br>
-        -Galeri<br>
-        -Alt Menü olabilir > Galeri, Gallery<br>
+        -İletişim: iletisim
         <br>
-        -Projelerimiz<br>
-        -Alt Menü olabilir > Projeler, Projelerimiz<br>
+        -Haberler: haberler
         <br>
-        -Referanslar<br>
-        -Alt Menü Olabilir > Referanslar, Referanslarımız<br>
+        -*Galeri: galeri, gallery
         <br>
-        -İletişim<br>
-        -Alt Menü olamaz > İletişim<br>
+        -*Projelerimiz: projeler, projelerimiz
         <br>
-        -Haberler<br><br>
-        -Alt Menü olamaz > Haberler
+        -*Referanslar: referanslar, referanslarimiz
+        <br>
+        (Yıldızlı menüler alt menü olarak eklenebilir.)
 </span>
     </div>
 </div>

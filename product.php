@@ -70,7 +70,7 @@ while($rowFooter = mysqli_fetch_array($resultFooter)){
 		
 		while ( $rowFooter2 = mysqli_fetch_array($resultFooter2)) {
 			echo '
-                        	<a href="../category/'.$rowFooter2['id'].'">
+                        	<a href="category?uid='.$rowFooter2['id'].'">
                         	<li>'.$rowFooter2['name'].'</li></a>
                        ';
 		}
@@ -90,8 +90,8 @@ while($rowFooter = mysqli_fetch_array($resultFooter)){
 <div class="feature-block text-align-center">
 <?php 
 echo 	'	<div class="product-image">
-	            <a class="magnific-image alignleft image-link" href="../cms/modules/urunler/'.$rowx['url']. '" data-gal="prettyPhoto[products]" title="'.$rowx['name'].'">
-					<img class="image-self" src="../cms/modules/urunler/'.$rowx['url'].'" width="350"height="120" alt="Ürün resmi"/> 
+	            <a class="magnific-image alignleft image-link" href="cms/modules/urunler/'.$rowx['url']. '" data-gal="prettyPhoto[products]" title="'.$rowx['name'].'">
+					<img class="image-self" src="cms/modules/urunler/'.$rowx['url'].'" width="350"height="120" alt="Ürün resmi"/> 
 				</a>
 			</div> '; 
 ?> 
@@ -142,12 +142,12 @@ for($i = 0; $i < $n-1; $i ++)
 if ($rowx ['type'] == 1) 
 	{
 	echo "<li class='col-sm-12 col-md-3 col-xs-12 grid-item project-grid-item paving format-standard isotope-item'>";
-	echo '<a class="magnific-image alignleft" href="../cms/modules/urunler/'.$parts[$i]. '" data-gal="prettyPhoto[products]" title="ürün resmi"> <img src="../cms/modules/urunler/'.$parts[$i].'" width="100%" height="120" alt="ürün resmi"/></a> ';
+	echo '<a class="magnific-image alignleft" href="cms/modules/urunler/'.$parts[$i]. '" data-gal="prettyPhoto[products]" title="ürün resmi"> <img src="cms/modules/urunler/'.$parts[$i].'" width="100%" height="120" alt="ürün resmi"/></a> ';
 	} 
 else 
 {
 	echo "<li class='col-sm-12 col-md-3 col-xs-12 grid-item project-grid-item paving format-standard isotope-item'>";
-	echo '<a class="magnific-image alignleft" href="../cms/modules/urunler/'.$parts[$i]. '" data-gal="prettyPhoto[products]" title="ürün resmi"> <img src="../cms/modules/urunler/'.$parts[$i].'" width="100%" width="120" alt="ürün resmi"/></a> ';
+	echo '<a class="magnific-image alignleft" href="cms/modules/urunler/'.$parts[$i]. '" data-gal="prettyPhoto[products]" title="ürün resmi"> <img src="cms/modules/urunler/'.$parts[$i].'" width="100%" width="120" alt="ürün resmi"/></a> ';
 }
 
 echo "</li>";
@@ -178,29 +178,29 @@ echo "<ul class=\"productlifes\">";
 			
 
 		if ($ext == "xlsx")
-		{echo "<li><a href=\"cms/modules/urunler/".str_replace(' ', '',$partsf [$i])."\"><img src=\"../images/assets/excel.png\"></a></td><td align=\"center\" width=\"400px\">" .basename($partsf [$i]). "</li>";	}
+		{echo "<li><a href=\"cms/modules/urunler/".str_replace(' ', '',$partsf [$i])."\"><img src=\"images/assets/excel.png\"></a></td><td align=\"center\" width=\"400px\">" .basename($partsf [$i]). "</li>";	}
 
 		else if ($ext == "xls")
-		{echo "<li><a href=\"cms/modules/urunler/".str_replace(' ', '',$partsf [$i])."\"><img src=\"../images/assets/excel.png\"></a></td><td align=\"center\" width=\"400px\">" .basename($partsf [$i]). "</li>";	}
+		{echo "<li><a href=\"cms/modules/urunler/".str_replace(' ', '',$partsf [$i])."\"><img src=\"images/assets/excel.png\"></a></td><td align=\"center\" width=\"400px\">" .basename($partsf [$i]). "</li>";	}
 
 		else if ($ext == "pdf")
-		{echo "<li><a href=\"cms/modules/urunler/".str_replace(' ', '',$partsf [$i])."\"><img src=\"../images/assets/pdf.png\"></a></td><td align=\"center\" width=\"400px\">".basename($partsf [$i])."</li>";	}
+		{echo "<li><a href=\"cms/modules/urunler/".str_replace(' ', '',$partsf [$i])."\"><img src=\"images/assets/pdf.png\"></a></td><td align=\"center\" width=\"400px\">".basename($partsf [$i])."</li>";	}
 
 		else if ($ext == "docx")
-		{echo "<li><a href=\"cms/modules/urunler/".str_replace(' ', '',$partsf [$i])."\"><img src=\"../images/assets/word.png\"></a></td><td align=\"center\" width=\"400px\">" .basename($partsf [$i])."</li>";	}
+		{echo "<li><a href=\"cms/modules/urunler/".str_replace(' ', '',$partsf [$i])."\"><img src=\"images/assets/word.png\"></a></td><td align=\"center\" width=\"400px\">" .basename($partsf [$i])."</li>";	}
 
 		else if ($ext == "doc")
-		{echo "<li><a href=\"cms/modules/urunler/".str_replace(' ', '',$partsf [$i])."\"><img src=\"../images/assets/word.png\"></a></td><td align=\"center\" width=\"400px\">" .basename($partsf [$i])."</li>";	}
+		{echo "<li><a href=\"cms/modules/urunler/".str_replace(' ', '',$partsf [$i])."\"><img src=\"images/assets/word.png\"></a></td><td align=\"center\" width=\"400px\">" .basename($partsf [$i])."</li>";	}
 
 		else if($ext == "txt")
-		{echo "<li><a href=\"cms/modules/urunler/".str_replace(' ', '',$partsf [$i])."\"><img src=\"../images/assets/file.png\"></a></td><td align=\"center\" width=\"400px\">".basename($partsf [$i]). "</li>";	}
+		{echo "<li><a href=\"cms/modules/urunler/".str_replace(' ', '',$partsf [$i])."\"><img src=\"images/assets/file.png\"></a></td><td align=\"center\" width=\"400px\">".basename($partsf [$i]). "</li>";	}
 
 		else {}	
 		
 		} 
 		
 		
-if($rowx['video'] !== "") { echo "<li><a href=\"".$rowx['video']."\"><img src=\"../images/assets/video.png\"> ürün videosu</a></li>";}
+if($rowx['video'] !== "") { echo "<li><a href=\"".$rowx['video']."\"><img src=\"images/assets/video.png\"> ürün videosu</a></li>";}
 else	if	($rowx['video'] == "") 				 {echo "</ul>";}
 
 echo "</ul>";

@@ -24,10 +24,10 @@ else if($row['showpopup'] == 1)
 										
 									{ 
 echo <<<EOT
-<script src="../cms/js/plugins/popup/jquery.colorbox.js"></script>
-<link rel="stylesheet" href="../cms/js/plugins/popup/colorbox.css" />
+<script src="cms/js/plugins/popup/jquery.colorbox.js"></script>
+<link rel="stylesheet" href="cms/js/plugins/popup/colorbox.css" />
 <div style="display: none;"><div id="popup-message">
-<img class="popup-img" src="../cms/modules/popup/uploads/popup.jpg"  width="500">
+<img class="popup-img" src="cms/modules/popup/uploads/popup.jpg"  width="500">
 </div></div>
 EOT;
 										}     
@@ -40,8 +40,8 @@ EOT;
 
 
 echo <<<EOT
-<script src="../cms/js/plugins/popup/jquery.colorbox.js"></script>
-<link rel="stylesheet" href="../cms/js/plugins/popup/colorbox.css" />
+<script src="cms/js/plugins/popup/jquery.colorbox.js"></script>
+<link rel="stylesheet" href="cms/js/plugins/popup/colorbox.css" />
 <div style="display: none;"><div id="popup-message">
 <iframe width="560" height="315"  src="$videolink"  frameborder="0" allowfullscreen></iframe>
 </div></div>

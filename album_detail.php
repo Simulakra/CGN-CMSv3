@@ -28,8 +28,8 @@
                                 $result = mysqli_query($GLOBALS["___mysqli_ston"], $sql) or die(mysqli_error($GLOBALS["___mysqli_ston"])); 
                                 while($row = mysqli_fetch_array($result)) { 
                                     echo '<li class="col-sm-12 col-md-4 col-xs-12 grid-item project-grid-item  format-image news-page-image">' 
-                                            . "<a class='popup-image media-box image-link' href='../cms/modules/gallery/".$row['link']."' class='popup-image media-box'  data-title=".$row['id']."> 
-                                                <img class='image-self' src='../cms/modules/gallery/".$row['tlink']."'  width='250' height='250' alt=''/>" 
+                                            . "<a class='popup-image media-box image-link' href='cms/modules/gallery/".$row['link']."' class='popup-image media-box'  data-title=".$row['id']."> 
+                                                <img class='image-self' src='cms/modules/gallery/".$row['tlink']."'  width='250' height='250' alt=''/>" 
                                             . "</a></li>"; 
                                 } 
                             ?> 
@@ -43,12 +43,12 @@
                                     $result = mysqli_query($GLOBALS["___mysqli_ston"], $sql) or die(mysqli_error($GLOBALS["___mysqli_ston"])); 
                                      
                                     while($row = mysqli_fetch_array($result)) { 
-                                        echo "<li> <a href=\"../album/".$row['id']."\">".$row['folder']."</a></li>"; 
+                                        echo "<li> <a href=\"album_detail?id=".$row['id']."\">".$row['folder']."</a></li>"; 
                                     } 
                                 ?> 
                             </ul>
                         </div>
-                        <a class='btn btn-primary btn-sm pull-right' href='../gallery/'>Galeriye Geri Dön</a>
+                        <a class='btn btn-primary btn-sm pull-right' href='gallery'>Galeriye Geri Dön</a>
                     </div>
                 </div>
             </div>

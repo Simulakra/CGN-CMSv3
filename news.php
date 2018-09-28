@@ -38,15 +38,15 @@
                                 <div class='row'> 
                                         <div class='col-md-3 col-sm-3'>
                                             <div class='news-page-image'>
-                                                <img class='new-pre-img' src='../cms/modules/news/".$haberler['link']."'>
+                                                <img class='new-pre-img' src='cms/modules/news/".$haberler['link']."'>
                                             </div>
                                         </div>
                                         <div class='col-md-9 col-sm-9 news-padding'>
                                             <h3 class='blog-title'> 
-                                                <a href=\"../news/".$haberler['id']."\">".$haberler['title']."</a> 
+                                                <a href=\"news_detail?id=".$haberler['id']."\">".$haberler['title']."</a> 
                                             </h3>     
                                             <p>" .strip_tags(mb_strimwidth($summary, 0, 291,"...")). "</p> 
-                                            <a class='btn btn-primary btn-sm' href=\"../news/".$haberler['id']."\">Daha Fazla</a>
+                                            <a class='btn btn-primary btn-sm' href=\"news_detail?id=".$haberler['id']."\">Daha Fazla</a>
                                         </div>  
                                         
                                  </div> 
@@ -62,15 +62,15 @@
                                 <div class='row'> 
                                         <div class='col-md-3 col-sm-3'>
                                             <div class='news-page-image'>
-                                                <img class='new-pre-img' src='../cms/modules/news/".$haberler['link']."'>
+                                                <img class='new-pre-img' src='cms/modules/news/".$haberler['link']."'>
                                             </div>
                                         </div>
                                         <div class='col-md-9 col-sm-9 news-padding'>
                                             <h3 class='blog-title'> 
-                                                <a href=\"../news/".$haberler['id']."\">".$haberler['title']."</a> 
+                                                <a href=\"news_detail?id=".$haberler['id']."\">".$haberler['title']."</a> 
                                             </h3>     
                                             <p>" .strip_tags(mb_strimwidth($summary, 0, 291,"...")). "</p> 
-                                            <a class='btn btn-primary btn-sm' href=\"../news/".$haberler['id']."\">Daha Fazla</a>
+                                            <a class='btn btn-primary btn-sm' href=\"news_detail?id=".$haberler['id']."\">Daha Fazla</a>
                                         </div>  
                                         
                                  </div> 

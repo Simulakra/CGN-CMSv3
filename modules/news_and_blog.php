@@ -6,7 +6,7 @@
             <div class="carousel-wrapper">
                 <div class="row">
                     <ul class="owl-carousel carousel-fw" id="services-slider" data-columns="4" data-autoplay="" data-pagination="no" data-arrows="yes" data-single-item="no">
-
+ 
     <?php 
             $sql = ""; 
             $sql = "select * from 35cgnpress where id > 0 ORDER BY date DESC;"; 

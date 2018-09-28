@@ -30,7 +30,7 @@
                                     echo '<li class="item">' 
                                             . '<div class="service-grid-item grid-item format-standard feature-block" style="height: 320px;">'; 
                                         echo '<div><a href="kategori.php?uid='.$rowx['id'].'">' 
-                                                . '<img src="../cms/modules/urunler/'.$rowx['url'].'/" alt="ÜRÜN ÖZELLİKLERİ" width="400px;" />' 
+                                                . '<img src="cms/modules/urunler/'.$rowx['url'].'/" alt="ÜRÜN ÖZELLİKLERİ" width="400px;" />' 
                                             . '</a>'; 
 
                                         echo '<br>' 
@@ -61,7 +61,7 @@
                                     echo '<li class="item">' 
                                             . '<div class="service-grid-item grid-item format-standard feature-block" style="height: 320px;">'; 
                                         echo '<div><a href="kategori.php?uid='.$rowx['id'].'">' 
-                                                . '<img src="../cms/modules/urunler/'.$rowx['url'].'/" alt="ÜRÜN ÖZELLİKLERİ" width="400px;" />' 
+                                                . '<img src="cms/modules/urunler/'.$rowx['url'].'/" alt="ÜRÜN ÖZELLİKLERİ" width="400px;" />' 
                                             . '</a>'; 
 
                                         echo '<br>' 
@@ -93,7 +93,7 @@
                                 echo '<li class="item">' 
                                         . '<div class="service-grid-item grid-item format-standard feature-block" style="height: 320px;">'; 
                                     echo '<div class="col-centered" style=""><a href="kategori.php?uid='.$rowx['id'].'">' 
-                                            . '<img src="../cms/modules/urunler/'.$rowx['url'].'/'.$resim.'" alt="ÜRÜN ÖZELLİKLERİ" width="400px;" />' 
+                                            . '<img src="cms/modules/urunler/'.$rowx['url'].'/'.$resim.'" alt="ÜRÜN ÖZELLİKLERİ" width="400px;" />' 
                                         . '</a>'; 
 
                                     echo '<br>' 
