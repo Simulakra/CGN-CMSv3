@@ -57,24 +57,24 @@ error_reporting ( 0 );
 
 		<div class="navbar-default navbar-static-side" role="navigation">
 		<div class="sidebar-collapse l-side-scroll">
-		<ul class="nav" id="side-menu">
-		<li ><a href="index.php">									<i class="fa fa-dashboard fa-fw"></i> Ana Ekran</a></li>
-		<li><a href="modules/menu/page.php">							<i class="fa fa-files-o fa-fw"></i> Menu &amp; Sayfa Yönetimi</a></li>
-		<li><a href="modules/slider/index.php">					    	<i class="fa fa-picture-o fa-fw"></i> Slider Yönetimi</a></li>
-		<li><a href="modules/urunler/category_main.php"> 	<i class="fa fa-cubes fa-fw"></i> Kategori Yönetimi</a></li>
-		<li><a href="modules/urunler/product_main.php">   	<i class="fa fa-cube   fa-fw"></i> Ürün  Yönetimi</a></li>
-		<li><a href="modules/referenceslogos/index.php">	<i class="fa  fa-th fa-fw"></i> Referans Yönetimi</a></li>
-		<li><a href="modules/gallery/index.php">						<i class="fa fa-camera fa-fw"></i> Resim Galerisi Yönetimi</a></li>	
-		<li><a href="modules/ourclients/index.php">					<i class="fa fa-check-square-o fa-fw"></i> Bizi Seçenler</a></li> 
-		<li><a href="modules/news/index.php">							<i class="fa fa-pencil-square-o fa-fw"></i> Haber Yönetimi</a></li>
-		<li><a href="modules/projects/index.php">					<i class="fa fa-check fa-fw"></i> Projeler Yönetimi</a></li> 
-		<li><a href="modules/popup/index.php">						<i class="fa fa-bullhorn fa-fw"></i> Pop Up Duyuru</a></li>
-		<li><a href="modules/lang/index.php">						<i class="fa fa-language fa-fw"></i> Dil Yönetimi</a></li>
-		<li><a href="modules/social/index.php">						<i class="fa fa-thumbs-up fa-fw"></i> Sosyal Medya Yönetimi</a></li>
-		<li><a href="modules/user/userman.php">					<i class="fa fa-user fa-fw"></i> Kullanıcı Yönetimi</a></li>
-		<li><a href=<?php echo '"http://' . $_SERVER['HTTP_HOST'] . '/"' ?> target="_blank"> 							<i class="fa fa-globe fa-fw"></i> Siteye Git</a></li>
-		<li><a href="logout.php">								<i class="fa fa-sign-out fa-fw"></i>Sistemden Çıkış </a></li>
-		</ul>
+			<ul class="nav" id="side-menu">
+			<li ><a href="index.php">									<i class="fa fa-dashboard fa-fw"></i> Ana Ekran</a></li>
+			<li><a href="modules/menu/page.php">							<i class="fa fa-files-o fa-fw"></i> Menu &amp; Sayfa Yönetimi</a></li>
+			<li><a href="modules/slider/index.php">					    	<i class="fa fa-picture-o fa-fw"></i> Slider Yönetimi</a></li>
+			<li><a href="modules/urunler/category_main.php"> 	<i class="fa fa-cubes fa-fw"></i> Kategori Yönetimi</a></li>
+			<li><a href="modules/urunler/product_main.php">   	<i class="fa fa-cube   fa-fw"></i> Ürün  Yönetimi</a></li>
+			<li><a href="modules/referenceslogos/index.php">	<i class="fa  fa-th fa-fw"></i> Referans Yönetimi</a></li>
+			<li><a href="modules/gallery/index.php">						<i class="fa fa-camera fa-fw"></i> Resim Galerisi Yönetimi</a></li>	
+			<li><a href="modules/ourclients/index.php">					<i class="fa fa-check-square-o fa-fw"></i> Bizi Seçenler</a></li> 
+			<li><a href="modules/news/index.php">							<i class="fa fa-pencil-square-o fa-fw"></i> Haber Yönetimi</a></li>
+			<li><a href="modules/projects/index.php">					<i class="fa fa-check fa-fw"></i> Projeler Yönetimi</a></li> 
+			<li><a href="modules/popup/index.php">						<i class="fa fa-bullhorn fa-fw"></i> Pop Up Duyuru</a></li>
+			<li><a href="modules/lang/index.php">						<i class="fa fa-language fa-fw"></i> Dil Yönetimi</a></li>
+			<li><a href="modules/social/index.php">						<i class="fa fa-thumbs-up fa-fw"></i> Sosyal Medya Yönetimi</a></li>
+			<li><a href="modules/user/userman.php">					<i class="fa fa-user fa-fw"></i> Kullanıcı Yönetimi</a></li>
+			<li><a href=<?php echo '"http://' . $_SERVER['HTTP_HOST'] . '/"' ?> target="_blank"> 							<i class="fa fa-globe fa-fw"></i> Siteye Git</a></li>
+			<li><a href="logout.php">								<i class="fa fa-sign-out fa-fw"></i>Sistemden Çıkış </a></li>
+			</ul>
 		</div>
 		</div>
             <!-- /.navbar-static-side -->

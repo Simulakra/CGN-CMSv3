@@ -3,7 +3,7 @@
         <div class="page-header dark">
             <div class="container">
 			<ol class="breadcrumb">
-				<li><a href="">Anasayfa</a></li>
+				<li><a href="./">Anasayfa</a></li>
 				<li class="active"><?php echo $title ?></li>
 			</ol>
 			<h1><?php echo $title ?></h1>

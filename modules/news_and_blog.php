@@ -19,15 +19,15 @@
                 echo '<li class="item"> 
                                         <div class="service-grid-item grid-item format-standard"> 
                                             <div class="news-image">
-                                            <a class="image-link" href="../news/' . $row['id'] . '"  class="media-box2"><img class="image-self" src="../cms/modules/news/'; 
+                                            <a class="image-link" href="news_detail.php?id=' . $row['id'] . '"  class="media-box2"><img class="image-self" src="./cms/modules/news/'; 
                 echo $row['link']; 
                 echo ' " ></a> 
                 </div>
                                             <div class="grid-item-inner"> 
-                                                <h4><a href="../news/' . $row['id'] . '">' . $row['title'] . '</a></h4> 
-                                                <h6><a href="../news/' . $row['id'] . '">' . $row['keywords'] . '</a></h6> 
+                                                <h4><a href="news_detail.php?id=' . $row['id'] . '">' . $row['title'] . '</a></h4> 
+                                                <h6><a href="news_detail.php?id=' . $row['id'] . '">' . $row['keywords'] . '</a></h6> 
                                                 <p>' . $text . '</p> 
-                                                <a href="../news/' . $row['id'] . '" class="more">devamını oku</a> 
+                                                <a href="news_detail.php?id=' . $row['id'] . '" class="more">devamını oku</a> 
                                             </div> 
                                         </div> 
                                       </li>'; 

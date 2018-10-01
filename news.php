@@ -15,7 +15,7 @@
             <div class="container">
                 <!-- Breadcrumb -->
                 <ol class="breadcrumb">
-                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="./">Anasayfa</a></li>
                     <li class="active">Haberler</li>
                 </ol>
                 <h1>CGN Elektronik Haberleri  --> <?php if (isset($_GET['filter'])) echo $_GET['filter']; ?> </h1>
@@ -43,10 +43,10 @@
                                         </div>
                                         <div class='col-md-9 col-sm-9 news-padding'>
                                             <h3 class='blog-title'> 
-                                                <a href=\"news_detail?id=".$haberler['id']."\">".$haberler['title']."</a> 
+                                                <a href=\"news_detail.php?id=".$haberler['id']."\">".$haberler['title']."</a> 
                                             </h3>     
                                             <p>" .strip_tags(mb_strimwidth($summary, 0, 291,"...")). "</p> 
-                                            <a class='btn btn-primary btn-sm' href=\"news_detail?id=".$haberler['id']."\">Daha Fazla</a>
+                                            <a class='btn btn-primary btn-sm' href=\"news_detail.php?id=".$haberler['id']."\">Daha Fazla</a>
                                         </div>  
                                         
                                  </div> 
@@ -67,10 +67,10 @@
                                         </div>
                                         <div class='col-md-9 col-sm-9 news-padding'>
                                             <h3 class='blog-title'> 
-                                                <a href=\"news_detail?id=".$haberler['id']."\">".$haberler['title']."</a> 
+                                                <a href=\"news_detail.php?id=".$haberler['id']."\">".$haberler['title']."</a> 
                                             </h3>     
                                             <p>" .strip_tags(mb_strimwidth($summary, 0, 291,"...")). "</p> 
-                                            <a class='btn btn-primary btn-sm' href=\"news_detail?id=".$haberler['id']."\">Daha Fazla</a>
+                                            <a class='btn btn-primary btn-sm' href=\"news_detail.php?id=".$haberler['id']."\">Daha Fazla</a>
                                         </div>  
                                         
                                  </div> 

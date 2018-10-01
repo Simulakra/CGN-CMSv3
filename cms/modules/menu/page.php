@@ -18,9 +18,9 @@ error_reporting ( 1 );
         <br>
         -Anasayfa: anasayfa, ana sayfa
         <br>
-        -Ürünler: urunler, urunlerimiz
+        -Ürünler: ürünler, ürünlerimiz
         <br>
-        -İletişim: iletisim
+        -İletişim: iletişim
         <br>
         -Haberler: haberler
         <br>

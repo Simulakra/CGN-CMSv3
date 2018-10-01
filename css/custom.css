@@ -166,7 +166,7 @@ h6 {color:white; font-size:18px;}
 }
 .accordion-heading .accordion-toggle{
 	background: #4392A3;
-	color: #fff;
+	color: #fff;/*AKTARMA!!!!*/
 }
 @media screen and (max-width: 388px){
 	.header-info-cols{
