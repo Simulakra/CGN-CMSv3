@@ -58,7 +58,7 @@ echo "<script language=\"javascript\">  alert(\"HATA > İZİN VERİLEN FORMATLAR
 } 
 if ($uploadOk == 0) 
 { 
-echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz1\"); window.location.href='modifyproduct.php?id=".$id."';</script>";  
+echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz Code:1\"); window.location.href='modifyproduct.php?id=".$id."';</script>";  
 }	 
 else 
 	{
@@ -87,7 +87,7 @@ else
 				if (move_uploaded_file($_FILES["upload_thumb"]["tmp_name"], $target_file))
 					{							$urli = $target_file;						} 
 				else 
-					{       echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz2\"); window.location.href='modifyproduct.php?id=".$id."';</script>";   						}
+					{       echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz Code:2\"); window.location.href='modifyproduct.php?id=".$id."';</script>";   						}
 	}
 //////////////////////////////////////////////////////////////////////// FOR PRODUCT THUMBNAIL
 
@@ -97,7 +97,7 @@ $target_dir = "urunresim/".$id."/";
 mkdir($target_dir, 0777, true); 
 $num_files = count ( $_FILES ['upload_imgs'] ['name'] ); 
 
-for($i = 0; $i < $num_files; $i ++) 
+for($i = 0; $i < $num_files; $i++) 
 { 
 
 $target_file = $target_dir . basename ( $_FILES ["upload_imgs"] ["name"] [$i] ); 
@@ -112,7 +112,7 @@ $check = getimagesize ( $_FILES ["upload_imgs"] ["tmp_name"] [$i] );
 		} 
 		else 
 		{ 
-		$uploadOk = 0;  echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz3\"); window.location.href='modifyproduct.php?id=".$id."';</script>";  
+		$uploadOk = 0;  echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz Code:3\"); window.location.href='modifyproduct.php?id=".$id."';</script>";  
 		} 
 } 
 
@@ -124,7 +124,7 @@ $uploadOk = 0;
 	
 if ($uploadOk == 0) 
 	{ 
-echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz4\"); window.location.href='modifyproduct.php?id=".$id."';</script>";  
+echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz Code:4\"); window.location.href='modifyproduct.php?id=".$id."';</script>";  
 	}
 else 
 	 { 
@@ -158,7 +158,7 @@ else
 		} 
 		else 
 		{
-			echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz5\"); window.location.href='modifyproduct.php?id=".$id."';</script>";  
+			echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz Code:5\"); window.location.href='modifyproduct.php?id=".$id."';</script>";  
 		} 
 	} 
 } 
@@ -180,13 +180,13 @@ for($i = 0; $i < $num_files; $i ++)
 
 	if ($imageFileType != "pdf" && $imageFileType != "docx" && $imageFileType != "xlsx" && $imageFileType != "txt" && $imageFileType != "doc" && $imageFileType != "xls") 
 		{ 
-			echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz6\"); window.location.href='modifyproduct.php?id=".$id."';</script>"; 
+			echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz Code:6\"); window.location.href='modifyproduct.php?id=".$id."';</script>"; 
 		$uploadOk = 0; 
 		} 
 		
 	if ($uploadOk == 0)
 		{ 
-			echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz7\"); window.location.href='modifyproduct.php?id=".$id."';</script>"; 
+			echo "<script language=\"javascript\">  alert(\"HATA > tekrar deneyiniz Code:7\"); window.location.href='modifyproduct.php?id=".$id."';</script>"; 
 		}
 	else 
 		{ 
