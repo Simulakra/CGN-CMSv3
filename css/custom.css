@@ -105,7 +105,7 @@ h6 {color:white; font-size:18px;}
 	height: -webkit-fill-available;
 	overflow: hidden;
 	display: block;
-	padding-top: 2vh;
+	padding-top: 5px;
 }
 .news-image{
 	display: block;
@@ -180,7 +180,7 @@ h6 {color:white; font-size:18px;}
 }
 
 .news-padding{
-	padding-top: 3vh; /*   Yeni haberlerde yazı biraz aşağı kaysın diye  */
+	padding-top: 10px; /*   Yeni haberlerde yazı biraz aşağı kaysın diye  */
 }
 
 @media only screen and (max-width: 778px){
