@@ -11,7 +11,7 @@ error_reporting ( 0 );
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CGN | cms v3.3</title>
+<title>CGN | cms v3.4</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 <link href="css/admin.css" rel="stylesheet">
@@ -35,7 +35,7 @@ error_reporting ( 0 );
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="index.php">ADMIN | cms v3.3</a>
+		<a class="navbar-brand" href="index.php">ADMIN | cms v3.4</a>
 		</div>
             <!-- /.navbar-header -->
 		<div id="hidemobile">
@@ -93,7 +93,6 @@ Bu panelden internet sitenizin tasarımı değiştiremezsiniz.</br>
 </div>
 </div>
 	<iframe width="49%" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTZPZmkghvm0fsKooeYaOtsYLoGADfaz8zfbUIJzv6c9nSwZ3bga2M1UXPW-pQeX3z3Mp6NHrJbI2eP/pubchart?oid=199142581&amp;format=image"></iframe>
-	<iframe width="49%" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTZPZmkghvm0fsKooeYaOtsYLoGADfaz8zfbUIJzv6c9nSwZ3bga2M1UXPW-pQeX3z3Mp6NHrJbI2eP/pubchart?oid=1009604013&amp;format=image"></iframe>
 </div>					
 </div>
 

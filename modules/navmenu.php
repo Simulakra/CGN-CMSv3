@@ -21,7 +21,7 @@ while($row = mysqli_fetch_array($result)) {
     //***************************** Tanımlı Sayfalar ******************************//
     if(tr_strtolower($row['menu_name']) == 'anasayfa'  || tr_strtolower($row['menu_name']) == 'ana sayfa')
     { 
-        echo "<li><a href=\"index \">".$row["menu_title"]."</a></li>"; 
+        echo "<li><a href=\"./ \">".$row["menu_title"]."</a></li>"; 
     }
 	
     else if(tr_strtolower($row['menu_name']) == tr_strtolower('ürünler')  || tr_strtolower($row['menu_name']) == tr_strtolower('ürünlerimiz')) 
