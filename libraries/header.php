@@ -34,9 +34,6 @@
 <nav role="menu" style="text-align: left;">
 <?php include("modules/navmenu.php"); ?>
 
-
-
-
 </nav>
 </div>
 
