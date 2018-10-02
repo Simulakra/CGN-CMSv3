@@ -66,7 +66,7 @@ while($rowFooter = mysqli_fetch_array($resultFooter)){
         	  $checkWhile = 0;
         }
 
-		echo '<a href="category?uid='.$rowFooter2['id'].'"><li>'.$rowFooter2['name'].'</li></a>';
+		echo '<a href="category.php?uid='.$rowFooter2['id'].'"><li>'.$rowFooter2['name'].'</li></a>';
 
 					
  			
@@ -102,14 +102,14 @@ if($_GET['uid'] != 0)
 
 			echo '<li class="col-md-4 grid-item"><div class="feature-block text-align-center">'; 
 			echo '<div class="category-image">
-					<a class="image-link" href="product?id='.$rowx['id'].'" class="imgeffect link">';
+					<a class="image-link" href="product.php?id='.$rowx['id'].'" class="imgeffect link">';
 
 			if($rowx['display']==1) echo "<img src='images/ribbon.png' style='width:25%;  position:absolute'>";
 
 			echo '<img class="image-self" src="'.$dizin.'" alt=" " width="100%"  /></a></div>'; 
 			echo ' <div class="image-border-bottom"></div><!-- the underline for the image  -->'; 
 
-			echo '<h5 class="text-center"><a href="product?id='.$rowx['id'].'" title="'.$rowx['name'].'">'.mb_strimwidth($rowx['name'], 0, 20,'...').'</a></h5>'; 
+			echo '<h5 class="text-center"><a href="product.php?id='.$rowx['id'].'" title="'.$rowx['name'].'">'.mb_strimwidth($rowx['name'], 0, 20,'...').'</a></h5>'; 
 			echo '</div></li>'; 
 			if($i % 3 == 0){ echo '</div><div class="fixed-row">'; }      
 		} 
@@ -126,10 +126,10 @@ if($_GET['uid'] != 0)
 
 			echo '<li class="col-md-4 grid-item"><div class="feature-block text-align-center">'; 
 			echo '<div class="category-image">
-					<a class="image-link" href="category?uid='.$rowx['id'].'" class="imgeffect link"><img class="image-self" src="cms/modules/urunler/'.$rowx['url'].'" alt="" /></a>
+					<a class="image-link" href="category.php?uid='.$rowx['id'].'" class="imgeffect link"><img class="image-self" src="cms/modules/urunler/'.$rowx['url'].'" alt="" /></a>
 				  </div>'; 
 			echo ' <div class="image-border-bottom"></div><!-- the underline for the image  -->'; 
-			echo '<h5 class="text-center"><a href="category?uid='.$rowx['id'].'" title="'.$rowx['name'].'">'.mb_strimwidth($rowx['name'], 0, 20,'...').'</a></h5>'; 
+			echo '<h5 class="text-center"><a href="category.php?uid='.$rowx['id'].'" title="'.$rowx['name'].'">'.mb_strimwidth($rowx['name'], 0, 20,'...').'</a></h5>'; 
 			echo '</div></li>'; 
 			if($i % 3 == 0){ 
 				echo '</div><div class="fixed-row">'; 
@@ -153,7 +153,7 @@ else{
 
 		echo '<li class="col-md-4 grid-item"><div class="feature-block text-align-center">'; 
 		echo '<div class="category-image">
-				<a class="image-link" href="product?id='.$rowx['id'].'" class="imgeffect link">';
+				<a class="image-link" href="product.php?id='.$rowx['id'].'" class="imgeffect link">';
 
 			if($rowx['display']==1) echo "<img src='images/ribbon.png' style='width:25%; position:absolute'>";
 
@@ -161,7 +161,7 @@ else{
 			  </div>'; 
 		echo ' <div class="image-border-bottom"></div><!-- the underline for the image  -->'; 
 
-		echo '<h5 class="text-center"><a href="category?uid='.$rowx['id'].'" title="'.$rowx['name'].'">'.mb_strimwidth($rowx['name'], 0, 20,'...').'</a></h5>'; 
+		echo '<h5 class="text-center"><a href="category.php?uid='.$rowx['id'].'" title="'.$rowx['name'].'">'.mb_strimwidth($rowx['name'], 0, 20,'...').'</a></h5>'; 
 		echo '</div></li>'; 
 		if($i % 3 == 0){ 
 			echo '</div><div class="fixed-row">'; 

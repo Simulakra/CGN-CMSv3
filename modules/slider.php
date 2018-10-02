@@ -1,20 +1,20 @@
 <!-- SLİDER AREA-->
 <!--
--------------------------------		FLEX SLIDER OPTIONS		----------------------
+-------------------------------     FLEX SLIDER OPTIONS     ----------------------
 
-animation: 						Accepts: "fade" or "slide"
-direction:							Accepts: "horizontal" or "vertical
-reverse: 							Accepts: Boolean
-animationLoop 				Accepts: Boolean
-smoothHeight				Accepts: Boolean
-startAt								Default: 0 		Accepts: Number
-slideshow						Default: true 	Accepts: Boolean
-slideshowSpeed			Default: 7000 	Accepts Number
-animationSpeed			Defaults: 600 		Accepts: Number
-randomize						Defaults: false 	Accepts: Boolean
-pauseOnAction				Defaults: true 		Accepts: Boolean
-pauseOnHover				Defaults: false 	Accepts: Boolean
-touch									Defaults: true 		Accepts: Boolean
+animation:                      Accepts: "fade" or "slide"
+direction:                          Accepts: "horizontal" or "vertical
+reverse:                            Accepts: Boolean
+animationLoop               Accepts: Boolean
+smoothHeight                Accepts: Boolean
+startAt                             Default: 0      Accepts: Number
+slideshow                       Default: true   Accepts: Boolean
+slideshowSpeed          Default: 7000   Accepts Number
+animationSpeed          Defaults: 600       Accepts: Number
+randomize                       Defaults: false     Accepts: Boolean
+pauseOnAction               Defaults: true      Accepts: Boolean
+pauseOnHover                Defaults: false     Accepts: Boolean
+touch                                   Defaults: true      Accepts: Boolean
 
 -->
 
@@ -22,24 +22,24 @@ touch									Defaults: true 		Accepts: Boolean
 
 <script type="text/javascript">
 
-	jQuery(window).load(function() {
-	jQuery('#unique_1_slider').flexslider({
-	animation: "fade",
-			controlsContainer: "#unique_1_slider .flex-nav-container",
-			smoothHeight: true,
-			directionNav: true,
-			controlNav:false,
-			prevText: "<<", 
-			nextText: ">>" 
-	});
-	});
+    jQuery(window).load(function() {
+    jQuery('#unique_1_slider').flexslider({
+    animation: "fade",
+            controlsContainer: "#unique_1_slider .flex-nav-container",
+            smoothHeight: true,
+            directionNav: true,
+            controlNav:false,
+            prevText: "<<", 
+            nextText: ">>" 
+    });
+    });
 
 </script>
 
 <div class="hero-area">
-	<div class="flexslider heroflex hero-slider" data-autoplay="yes" data-pagination="no" data-arrows="yes" data-style="fade" data-pause="yes">
-		<ul class="slides">
-		
+    <div class="flexslider heroflex hero-slider" data-autoplay="yes" data-pagination="no" data-arrows="yes" data-style="fade" data-pause="yes">
+        <ul class="slides">
+        
 <?php   
     include("cms/std/cgncon.php");  
 
@@ -55,10 +55,10 @@ touch									Defaults: true 		Accepts: Boolean
 
                         $sliderlink = $row['tlink'];
                         if(strrpos($sliderlink, 'http')===false)
-                            $sliderlink = "http://".$sliderlink;
+                            $sliderlink = "http://".$sliderlink."\" target=\"_blank\"";
                         if(empty($row['tlink']))
-                            $sliderlink = "#";
-                        echo '<li class="parallax" style="background-image: url(cms/modules/slider/'; echo $row['link']; echo ');"><a href="'.$sliderlink.'" target="_blank">'  
+                            $sliderlink = "./\"";
+                        echo '<li class="parallax" style="background-image: url(cms/modules/slider/'; echo $row['link']; echo ');"><a href="'.$sliderlink.'>'  
                                 . '<div class="flex-caption text-align-center">'  
                                     . '<div class="container">'  
                                         . '<div class="flex-caption-table">'  
@@ -79,7 +79,7 @@ touch									Defaults: true 		Accepts: Boolean
         }  
       
 ?>  
-			
-		</ul>
-	</div>
+            
+        </ul>
+    </div>
 </div> 

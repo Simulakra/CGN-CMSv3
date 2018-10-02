@@ -29,7 +29,7 @@ error_reporting ( 0 );
 <div id="wrapper">
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
-<div class="navbar-header"><a class="navbar-brand" href="../../index.php">ADMIN | cms v3.3  </a></div>
+<div class="navbar-header"><a class="navbar-brand" href="../../index.php">ADMIN | cms v3.4  </a></div>
 
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">

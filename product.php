@@ -70,7 +70,7 @@ while($rowFooter = mysqli_fetch_array($resultFooter)){
 		
 		while ( $rowFooter2 = mysqli_fetch_array($resultFooter2)) {
 			echo '
-                        	<a href="category?uid='.$rowFooter2['id'].'">
+                        	<a href="category.php?uid='.$rowFooter2['id'].'">
                         	<li>'.$rowFooter2['name'].'</li></a>
                        ';
 		}
