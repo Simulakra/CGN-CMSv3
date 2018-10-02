@@ -78,6 +78,7 @@ while($rowFooter = mysqli_fetch_array($resultFooter)){
 </div>
 </div>
 
+<!--ÜRÜNLER-->
 <div class="col-sm-9">
 <ul class="sort-destination isotope project-items" style="position: relative; overflow: hidden;">
 
@@ -172,7 +173,7 @@ else{
 ?> 
 </ul>
 </div>
-
+<!--ÜRÜNLER-->
 
 
 
