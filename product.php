@@ -18,82 +18,16 @@ $title = $rowx[name];
 <div class="container"> 
 <div class="row"> 
 
-<div class="col-sm-3"> 
-<div class="accordion" id="accordionArea">
-<?php
-$getId = $_GET['id'];
-$sqlFooter = "select * from 35cgncategory where id > 0 AND parent_id=0"; 
-$resultFooter = mysqli_query($GLOBALS["___mysqli_ston_user"], $sqlFooter) or die(mysqli_error($GLOBALS["___mysqli_ston_user"]));
+<?php include ('modules/productmenu.php'); ?>
 
-$sqlFooter2 = 'select * from 35cgnproduct where id= '.$getId;
-$resultFooter2 = mysqli_query($GLOBALS["___mysqli_ston_user"], $sqlFooter2) or die(mysqli_error($GLOBALS["___mysqli_ston_user"]));
-$fParent = mysqli_fetch_array($resultFooter2);
-
-$sqlFooter3 = 'select * from 35cgncategory where id = '.$fParent['parent_id'];
-$resultFooter3 = mysqli_query($GLOBALS["___mysqli_ston_user"], $sqlFooter3) or die(mysqli_error($GLOBALS["___mysqli_ston_user"]));
-$fParent2 = mysqli_fetch_array($resultFooter3);
-
-
-while($rowFooter = mysqli_fetch_array($resultFooter)){
-
-	echo '<div class="accordion-group panel">
-                    <div class="accordion-heading accordionize">
-                        <a class="accordion-toggle ';
-                        if($fParent2['id'] == 0){
-                        	if($fParent2['id'] == $rowFooter['id']){
-                        		echo ' active';
-                        	}else{
-                        		echo ' inactive';
-                        	}
-                        }else{
-                        	if($fParent2['parent_id'] == $rowFooter['id']){
-                        		echo ' active';
-                        	}else{
-                        		echo ' active';
-                        	}
-                        }
-     echo'" data-toggle="collapse" data-parent="#accordionArea" href="#Area'.$rowFooter['id'].'">'.$rowFooter['name'].'<i class="fa fa-angle-down"></i> </a></div><div id="Area'.$rowFooter['id'].'" class="accordion-body ';
-     		if($fParent2['id'] == 0){
-            	if($fParent2['id'] == $rowFooter['id']){
-            		echo ' in';
-            	}
-            }else{
-            	if($fParent2['parent_id'] == $rowFooter['id']){
-            		echo ' in';
-            	}
-            }
-                
-	echo ' collapse"><div class="accordion-inner urunler-design"><ul>';
-
-	$sqlFooter2= "select * from 35cgncategory where parent_id=".$rowFooter['id'];
-	$resultFooter2= mysqli_query($GLOBALS["___mysqli_ston_user"], $sqlFooter2) or die(mysqli_error($GLOBALS["___mysqli_ston_user"])); 
-		
-		while ( $rowFooter2 = mysqli_fetch_array($resultFooter2)) {
-			echo '
-                        	<a href="category.php?uid='.$rowFooter2['id'].'">
-                        	<li>'.$rowFooter2['name'].'</li></a>
-                       ';
-		}
- 
-
-	echo "					</ul>
-					    </div>
-					 </div>
-                </div>";
-  } 
-?> 
-</div>
-</div>
-
+<!--ÜRÜNLER-->
 <div class="col-sm-9">
 <div class="col-sm-4">
 <div class="feature-block text-align-center">
 <?php 
-echo 	'	<div class="product-image">
-	            <a class="magnific-image alignleft image-link" href="cms/modules/urunler/'.$rowx['url']. '" data-gal="prettyPhoto[products]" title="'.$rowx['name'].'">
-					<img class="image-self" src="cms/modules/urunler/'.$rowx['url'].'" width="350"height="120" alt="Ürün resmi"/> 
-				</a>
-			</div> '; 
+echo 	'<a class="magnific-image alignleft" href="cms/modules/urunler/'.$rowx['url']. '" data-gal="prettyPhoto[products]" title="'.$rowx['name'].'">
+			<img src="cms/modules/urunler/'.$rowx['url'].'" width="350"height="120" alt="İlan resmi"/> 
+			</a> '; 
 ?> 
 </div>
 </div>
@@ -211,6 +145,7 @@ echo "</ul>";
 </div>
 
 </div>
+<!--ÜRÜNLER-->
 </div>
 </div>
 </div>
