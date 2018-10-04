@@ -26,7 +26,7 @@ $title = $rowx[name];
 <div class="feature-block text-align-center">
 <?php 
 echo 	'<a class="magnific-image alignleft" href="cms/modules/urunler/'.$rowx['url']. '" data-gal="prettyPhoto[products]" title="'.$rowx['name'].'">
-			<img src="cms/modules/urunler/'.$rowx['url'].'" width="350"height="120" alt="İlan resmi"/> 
+			<img src="cms/modules/urunler/'.$rowx['url'].'" width="350"height="120" alt="ürün resmi"/> 
 			</a> '; 
 ?> 
 </div>
