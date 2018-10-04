@@ -50,7 +50,7 @@ while($row = mysqli_fetch_array($result)) {
     {   echo "<li><a href=\"projects.php\">".$row["menu_title"]."</a></li>";    } 
  
     else if(tr_strtolower($row['menu_name']) == 'referanslar'  || tr_strtolower($row['menu_name']) == tr_strtolower('referanslarımız')) 
-    {   echo "<li><a href=\"references.php\">".$row["menu_title"]."</a></li>";    }
+    {   echo "<li><a href=\"references_logos.php\">".$row["menu_title"]."</a></li>";    }
 
     else if(tr_strtolower($row['menu_name']) == tr_strtolower('iletişim') ) 
     {   echo "<li><a href=\"contact.php\">".$row["menu_title"]."</a></li>";    } 
@@ -77,7 +77,7 @@ while($row = mysqli_fetch_array($result)) {
                     {    $tempfull = $tempfull. "<li><a href=\"projects.php\">".$row3["page_name"]."</a></li>";    } 
                  
                     else if(tr_strtolower($row3["page_name"]) == 'referanslar'  || tr_strtolower($row3["page_name"]) == 'referanslarımız') 
-                    {    $tempfull = $tempfull. "<li><a href=\"references.php\">".$row3["page_name"]."</a></li>";    }
+                    {    $tempfull = $tempfull. "<li><a href=\"references_logos.php\">".$row3["page_name"]."</a></li>";    }
 
                     else{
                         if($tempid=="-1") $tempid=$row3['page_id'];        

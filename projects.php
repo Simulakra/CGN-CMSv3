@@ -25,7 +25,7 @@
                                 while($row = mysqli_fetch_array($result)) { 
                                     echo '<li class="col-sm-12 col-md-4 col-xs-12 grid-item project-grid-item paving format-standard isotope-item">' 
                                             . '<div class="panel panel-default project-image-div">'
-                                                . "<a href='project_detail?albumname=".$row['id']."&name=".$row['albumname']."'> 
+                                                . "<a href='project_detail.php?albumname=".$row['id']."&name=".$row['albumname']."'> 
                                                     <img src='cms/modules/projects/".$row['filename']."'  width='500' height='500' class='project-image'/>" 
                                                 . "</a>"
                                                 ."<div class='panel-heading text-center'><b>" .$row['albumname']. "</b></div>" 
@@ -43,7 +43,7 @@
                                     $result = mysqli_query($GLOBALS["___mysqli_ston"], $sql) or die(mysqli_error($GLOBALS["___mysqli_ston"])); 
                                      
                                     while($row = mysqli_fetch_array($result)) { 
-                                        echo "<li> <a href=\"project_detail?albumname=".$row['id']."&name=".$row['albumname'].'"\">'.$row['albumname']."</a></li>"; 
+                                        echo "<li> <a href=\"project_detail.php?albumname=".$row['id']."&name=".$row['albumname'].'"\">'.$row['albumname']."</a></li>"; 
                                     } 
                                 ?> 
                             </ul>
