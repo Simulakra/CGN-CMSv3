@@ -40,7 +40,7 @@
 </div>
 
 <div class="td-icon-search col-md-1" style="z-index:2">
-<?php include("modules/searchbox.php") ?>
+<?php //include("modules/searchbox.php") ?>
 </div>
 
 </div>

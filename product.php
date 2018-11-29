@@ -44,6 +44,9 @@ echo 	'<a class="magnific-image alignleft" href="cms/modules/urunler/'.$rowx['ur
 <li class="active"> <a data-toggle="tab" href="#sampletab2"> Ürün Fotoğrafları </a> </li>
 <li> <a data-toggle="tab" href="#sampletab3"> Ürün Detayları </a> </li>
 <li> <a data-toggle="tab" href="#sampletab4"> Ek Dökümanlar </a> </li>
+<?php if( file_exists("modules/getoffer.php") ){
+	echo '<li><a href="modules/getoffer_func.php?action=1&product='.$_GET ['id'].'&url=product.php?id='.$_GET ['id'].'"><i class="fa fa-cart-plus" style="color: #5e5e5e;"></i> Teklif İste</a></li>'; }
+?>
 </ul>
 <?php 
 $id = mysqli_real_escape_string($GLOBALS["___mysqli_ston_user"], $_GET ['id']); 

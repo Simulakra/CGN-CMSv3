@@ -24,6 +24,16 @@
 <div><span><a href="mailto:iletisim@cgnyazilim.com">iletisim@cgnyazilim.com</a></span></div>
 </div>
 </li>
+<?php if( file_exists("modules/getoffer.php") ){
+	echo '<li><a href="modules/getoffer.php"><span class="icon-col"><i class="fa fa-shopping-cart"></i></span></a></li>';
+	try{session_start();}
+	catch (Exception $e) {}
+
+	if( !isset($_SESSION["offerCart"]) ){
+		$_SESSION["offerCart"] = array();
+	}
+}
+?>
 </ul>
 </div>
 </div>
