@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 28 Eyl 2018, 20:14:12
--- Sunucu sürümü: 10.1.35-MariaDB
--- PHP Sürümü: 7.2.9
+-- Üretim Zamanı: 11 Ara 2018, 09:08:58
+-- Sunucu sürümü: 10.1.36-MariaDB
+-- PHP Sürümü: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,10 +19,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Veritabanı: `democmsv33`
+-- Veritabanı: `cgncmsv34`
 --
-CREATE DATABASE IF NOT EXISTS `democmsv33` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `democmsv33`;
+CREATE DATABASE IF NOT EXISTS `cgncmsv34` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `cgncmsv34`;
 
 -- --------------------------------------------------------
 
@@ -46,31 +46,6 @@ INSERT INTO `35cgnalbum` (`id`, `folder`, `avatar`, `createdate`, `date`) VALUES
 (51, 'CGN Sosyal Medya', './img/CGN (3).jpg', '2018-08-05 00:00:00', '0000-00-00 00:00:00'),
 (55, 'CGN Yazılım', './img/rq3.JPG', '2018-08-05 00:00:00', '0000-00-00 00:00:00'),
 (57, 'CGN Web Sayfaları', './img/zz7.jpg', '2018-08-05 00:00:00', '0000-00-00 00:00:00');
-
--- --------------------------------------------------------
-
---
--- Tablo için tablo yapısı `35cgnarticle`
---
-
-CREATE TABLE `35cgnarticle` (
-  `id` int(55) NOT NULL,
-  `title` varchar(255) NOT NULL,
-  `desci` text NOT NULL,
-  `date` datetime NOT NULL,
-  `keywords` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Tablo için tablo yapısı `35cgnbanner`
---
-
-CREATE TABLE `35cgnbanner` (
-  `id` int(10) NOT NULL,
-  `caption` varchar(800) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin5;
 
 -- --------------------------------------------------------
 
@@ -100,22 +75,6 @@ INSERT INTO `35cgncategory` (`id`, `name`, `parent_id`, `page`, `url`, `is_leaf`
 (59, 'Ev Eşyaları', 0, NULL, 'katresim/59/evEsya.jpg', 0, 1),
 (60, 'Beyaz Eşya', 59, NULL, 'katresim/60/beyaz eşya.png', 1, 1),
 (61, 'Kahve Makineleri', 59, NULL, 'katresim/61/pzt sendrom cgn.jpg', 1, 1);
-
--- --------------------------------------------------------
-
---
--- Tablo için tablo yapısı `35cgnconfig`
---
-
-CREATE TABLE `35cgnconfig` (
-  `id` int(11) NOT NULL,
-  `title` varchar(40) NOT NULL,
-  `keywords` text NOT NULL,
-  `indx` varchar(40) NOT NULL,
-  `gogver` varchar(400) DEFAULT NULL,
-  `bingver` varchar(400) DEFAULT NULL,
-  `yanver` varchar(400) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin5 CHECKSUM=1;
 
 -- --------------------------------------------------------
 
@@ -713,9 +672,9 @@ CREATE TABLE `35cgnslider` (
 --
 
 INSERT INTO `35cgnslider` (`id`, `link`, `tlink`, `caption`, `album`, `type`, `rank`) VALUES
-(436, 'uploads/HD_Technologies_Banner5.jpg', NULL, 'CGN Yazılım Hizmetleri', NULL, NULL, NULL),
-(438, 'uploads/sayfalogo.png', NULL, ' ', NULL, NULL, NULL),
-(439, 'uploads/cgn-yazilim-tabe22.jpg', NULL, ' ', NULL, NULL, NULL);
+(1, 'uploads/HD_Technologies_Banner5.jpg', NULL, 'CGN Yazılım Hizmetleri', NULL, NULL, NULL),
+(2, 'uploads/sayfalogo.png', NULL, ' ', NULL, NULL, NULL),
+(3, 'uploads/cgn-yazilim-tabe22.jpg', NULL, ' ', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -801,19 +760,6 @@ INSERT INTO `35cgnvideoalbum` (`id`, `videotitle`, `url`, `avatar`) VALUES
 (10, 'İZMİR FUARI', 'https://www.youtube.com/embed/T0YfB14CXjc', NULL),
 (11, 'hh', 'https://www.youtube.com/embed/nn2BVILWRT0', NULL);
 
--- --------------------------------------------------------
-
---
--- Tablo için tablo yapısı `referans_galeri`
---
-
-CREATE TABLE `referans_galeri` (
-  `id` int(11) NOT NULL,
-  `ref_id` int(11) NOT NULL,
-  `link` int(11) NOT NULL,
-  `tlink` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 --
 -- Dökümü yapılmış tablolar için indeksler
 --
@@ -825,23 +771,11 @@ ALTER TABLE `35cgnalbum`
   ADD PRIMARY KEY (`id`);
 
 --
--- Tablo için indeksler `35cgnarticle`
---
-ALTER TABLE `35cgnarticle`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Tablo için indeksler `35cgncategory`
 --
 ALTER TABLE `35cgncategory`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id_UNIQUE` (`id`);
-
---
--- Tablo için indeksler `35cgnconfig`
---
-ALTER TABLE `35cgnconfig`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Tablo için indeksler `35cgnfromportfolio`
@@ -1029,7 +963,7 @@ ALTER TABLE `35cgnreferenceslogos`
 -- Tablo için AUTO_INCREMENT değeri `35cgnslider`
 --
 ALTER TABLE `35cgnslider`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=440;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `35cgnuser`
