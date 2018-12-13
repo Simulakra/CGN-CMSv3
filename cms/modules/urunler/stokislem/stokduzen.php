@@ -5,6 +5,13 @@ if( isset($_POST['barkod']) ){
 
 			include '../../../std/cgncon.php';
 			$barkod = $_POST['barkod'];
+
+			$sql = "SELECT id FROM 35cgnproductbarkod WHERE barkod='".$barkod."'";
+			$result = mysqli_query($GLOBALS["___mysqli_ston"],  $sql);
+			if( $row=mysqli_fetch_array($result) ){
+				$barkod = $row['id'];
+			}
+
 			$miktar = $_POST['miktar'];
 			$sql = "SELECT id, stok FROM 35cgnproduct WHERE id=".$barkod;
 			$result = mysqli_query($GLOBALS["___mysqli_ston"],  $sql);
