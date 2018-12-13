@@ -8,7 +8,7 @@ error_reporting(0);
 
 <div id="page-wrapper">
 <div class="row">
-<div class="col-lg-12"><h1 class="page-header">Ürünler</h1></div> 
+<div class="col-lg-12"><h1 class="page-header">Ürünler<a class="btn btn-primary btn-default" href="modify_stok.php" style="float: right;"><i class="fa fa-dropbox fa-lg"aria-hidden='true'></i> Hızlı Stok Giriş</a></h1> </div>
 <div class="col-lg-12">
 <div class="panel panel-default">
 <div class="panel-body">

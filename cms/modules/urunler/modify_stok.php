@@ -12,29 +12,30 @@ error_reporting(0);
 <div class="col-lg-12">
 	<div class="panel panel-default">
 		<div class="panel-body">
-
+		<form method="POST">
 			<table class="table">
 				<tr>
 					<td>
 						<div class="col-6">
 							<label>Miktar:</label>
-							<input class="form-control" type="" name="">
+							<input class="form-control" type="number" name="miktar" value="0">
 						</div>
 					</td>
 					<td>
 						<div class="col-6">
 							<label>Ürün Barkodu:</label>
-							<input class="form-control" type="" name="">
+							<input class="form-control" type="text" name="barkod" value="<?php if(isset($_GET['id']))echo $_GET['id'];?>">
 						</div>
 					</td>
 				</tr>
+				<tr>
+					<td>
+						<button class="btn btn-primary btn-default" formaction="stokislem/stokduzen.php"><i class="fa fa-plus"></i> Stok Giriş</button>
+						<button class="btn btn-primary btn-default" formaction="stokislem/stokduzen.php?uruncikar=1"><i class="fa fa-minus"></i> Stok Çıkış</button>
+					</td>
+				</tr>
 			</table>
-			<div class="col-12">
-				<a class="btn btn-primary btn-default " href=""><i class="fa fa-plus"></i> Stok Giriş</a>
-				<a class="btn btn-primary btn-default " href=""><i class="fa fa-minus"></i> Stok Çıkış</a>
-			</div>
-
-
+		</form>
 		</div>
 	</div>
 </div>
