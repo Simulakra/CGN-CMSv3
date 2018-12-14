@@ -9,6 +9,7 @@ if( isset($_GET['id']) ){
 	    	window.location.href="../modify_stok.php?id='.$_GET['id'].'";</script>'; 
 		}
 		else{
+			//aynı barkoddan var ise uyarı versin
 			$sql2 = "UPDATE 35cgnproductbarkod SET barkod='".$_POST['barkod']."' WHERE id=".$_GET['id'];
 			if( $res2=mysqli_query($GLOBALS["___mysqli_ston"],  $sql2) ){
 				echo '<script language="javascript">
