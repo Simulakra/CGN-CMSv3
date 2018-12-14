@@ -5,27 +5,41 @@ include ("../../std/check.php");
 include ("../../std/lmenu.php");
 error_reporting(0);
 ?>
-
 <?php
-$sql = "SELECT * FROM 35cgnproductbarkod WHERE id=".$_GET['id'];
-$res = mysqli_query($GLOBALS["___mysqli_ston"],  $sql);
-if($row = mysqli_fetch_array($res)){
-	$barkod=$row['barkod'];
-}
-?>
+if(isset($_GET['id'])){	
+	$sql = "SELECT name FROM 35cgnproduct WHERE id=".$_GET['id'];
+	$res = mysqli_query($GLOBALS["___mysqli_ston"],  $sql);
+	if($row = mysqli_fetch_array($res)){
+		$productname=$row['name'];
+	}
 
-<?php
-$sql = "SELECT * FROM 35cgnproductalarm WHERE id=".$_GET['id'];
-$res = mysqli_query($GLOBALS["___mysqli_ston"],  $sql);
-if($row = mysqli_fetch_array($res)){
-	$alarmset=true;
-	$alarmlimit=$row["stoklimit"];
+	$sql = "SELECT * FROM 35cgnproductbarkod WHERE id=".$_GET['id'];
+	$res = mysqli_query($GLOBALS["___mysqli_ston"],  $sql);
+	if($row = mysqli_fetch_array($res)){
+		$barkod=$row['barkod'];
+	}
+	
+	$sql = "SELECT * FROM 35cgnproductalarm WHERE id=".$_GET['id'];
+	$res = mysqli_query($GLOBALS["___mysqli_ston"],  $sql);
+	if($row = mysqli_fetch_array($res)){
+		$alarmset=true;
+		$alarmlimit=$row["stoklimit"];
+	}
 }
 ?>
 <div id="page-wrapper">
 <div class="row">
-<div class="col-lg-12"><h1 class="page-header">Ürünler</h1></div> 
+<div class="col-lg-12"><h1 class="page-header">Ürünler
+<?php if(isset($_GET['id'])) echo " - ".$productname; ?>
+<a class="btn btn-primary btn-default" href="product_main.php" style="float: right;"><i class="fa fa-undo fa-lg"aria-hidden='true'></i> Geri</a></h1></div> 
 <div class="col-lg-12">
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#"><i class="fa fa-dropbox"></i> Hızlı Stok Giriş/Çıkış</a></li>
+  <li><a href="stok_alis.php<?php if(isset($_GET["id"])) echo "?id=".$_GET["id"];?>"><i class="fa fa-cart-arrow-down"></i> Fatura ile Ürün Alışı</a></li>
+  <li><a href="stok_satis.php<?php if(isset($_GET["id"])) echo "?id=".$_GET["id"];?>"><i class="fa fa-shopping-bag"></i> Ürün Satışı</a></li>
+</ul>
+
 	<div class="panel panel-default">
 		<div class="panel-body">
 		<form method="POST">
@@ -91,6 +105,7 @@ if($row = mysqli_fetch_array($res)){
 		
 		</div>
 	</div>
+
 </div>
 </div>
 </div>

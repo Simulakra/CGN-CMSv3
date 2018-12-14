@@ -91,12 +91,15 @@ error_reporting(0);
       </div>
       <div class="modal-body">
       	<?php
-      	$sql = "SELECT 35cgnproduct.name,35cgnproduct.stok,35cgnproductalarm.stoklimit FROM 35cgnproduct, 35cgnproductalarm WHERE 35cgnproduct.stok < 35cgnproductalarm.stoklimit AND 35cgnproduct.id=35cgnproductalarm.id";
+      	$sql = "SELECT 35cgnproduct.id,35cgnproduct.name,35cgnproduct.stok,35cgnproductalarm.stoklimit FROM 35cgnproduct, 35cgnproductalarm WHERE 35cgnproduct.stok < 35cgnproductalarm.stoklimit AND 35cgnproduct.id=35cgnproductalarm.id";
 				$res = mysqli_query($GLOBALS["___mysqli_ston"],  $sql);
 				$bildirimvar=false;
 				while ( $row = mysqli_fetch_array($res) ) {
 					$bildirimvar=true;
-					echo '<p>Ürün Adı:'.$row['name'].'<br>Stok Adedi:'.$row['stok'].'<br>Stok Alarmınız:'.$row['stoklimit'].'</p>';
+					echo '<p><strong>Ürün Adı:</strong> '.$row['name'].'
+					<a class="tooltips" href="modify_stok.php?id='.$row['id'].'">
+						<span>Stok Takibi</span><i class="fa fa-dropbox fa-lg" "aria-hidden="true">&nbsp;</i></a>
+					<br><strong>Stok Adedi:</strong> '.$row['stok'].'<br><strong>Stok Alarmınız:</strong> '.$row['stoklimit'].' adedin altına inince...</p>';
 				}
 				if(!$bildirimvar) echo '<p>Stok kayıtlarınızda tetiklenen bir alarm bulunmamaktadır.</p>'.$sql;
       	?>
