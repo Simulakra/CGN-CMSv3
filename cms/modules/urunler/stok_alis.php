@@ -69,7 +69,7 @@ if(isset($_GET['id'])){
 						</td>
 					</tr>
 				</table>
-				<button type="submit" class="btn btn-primary" name="button" id="add">
+				<button type="submit" class="btn btn-primary" name="button" formaction="stokislem/stokalissatis.php?islem=0&id=<?php echo $_GET['id']; ?>">
 					<i class="fa fa-plus"></i> Alışı Stoğa Ekle</button> 
 			</form>
 		</div>

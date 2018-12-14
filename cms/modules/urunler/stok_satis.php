@@ -42,6 +42,7 @@ if(isset($_GET['id'])){
 						<td>
 							<label>Adedi:</label>
 							<input class="form-control" type="number" min="0" value="0" name="adet">
+							<input class="form-control" type="number" min="0" value="0" name="bedelsiz" style="display: none;">
 						</td>
 						<td>
 							<label>Ürün Barkodu:</label>
@@ -50,7 +51,7 @@ if(isset($_GET['id'])){
 					</tr>
 					<tr>
 						<td>
-							<label>Giriş Tutarı:</label>
+							<label>Çıkış Tutarı:</label>
 							<input class="form-control" type="number" min="0" value="0" name="tutar">
 						</td>
 						<td>
@@ -58,14 +59,8 @@ if(isset($_GET['id'])){
 							<input class="form-control" type="" name="iskonto">
 						</td>
 					</tr>
-					<tr>
-						<td>
-						</td>
-						<td>
-						</td>
-					</tr>
 				</table>
-				<button type="submit" class="btn btn-primary" name="button" id="add">
+				<button type="submit" class="btn btn-primary" name="button" formaction="stokislem/stokalissatis.php?islem=1&id=<?php echo $_GET['id']; ?>">
 					<i class="fa fa-minus"></i> Satışı Stoktan Çıkar</button> 
 			</form>
 		</div>
